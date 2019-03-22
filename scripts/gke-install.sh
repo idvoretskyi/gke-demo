@@ -20,7 +20,6 @@ gcloud container clusters create $CLUSTER_NAME \
 	--zone=$CLUSTER_ZONE \
 	--cluster-version=latest \
 	--machine-type=f1-micro \
-	--enable-autoscaling --min-nodes=1 --max-nodes=10 \
 	--enable-autorepair \
 	--preemptible \
 	--scopes=service-control,service-management,compute-rw,storage-ro,cloud-platform,logging-write,monitoring-write,pubsub,datastore \

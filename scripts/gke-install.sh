@@ -2,12 +2,8 @@
 
 # Setting environment variables
 
-export CLUSTER_NAME=idv-gke-01
+export CLUSTER_NAME=c1
 export CLUSTER_ZONE=us-east1-c
-export PROJECT_ID=idv-dev-0
-
-# Set the default project in gcloud shell
-gcloud config set project $PROJECT_ID
 
 # Enabling the necessary APIs
 gcloud services enable \
@@ -19,7 +15,7 @@ gcloud services enable \
 gcloud container clusters create $CLUSTER_NAME \
 	--zone=$CLUSTER_ZONE \
 	--cluster-version=latest \
-	--machine-type=f1-micro \
+	--machine-type=g1-small \
 	--enable-autorepair \
 	--preemptible \
 	--scopes=service-control,service-management,compute-rw,storage-ro,cloud-platform,logging-write,monitoring-write,pubsub,datastore \

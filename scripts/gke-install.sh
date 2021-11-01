@@ -15,7 +15,9 @@ gcloud services enable \
 gcloud container clusters create $CLUSTER_NAME \
 	--zone=$CLUSTER_ZONE \
 	--cluster-version=latest \
-	--machine-type=g1-small \
+	--machine-type=e2-micro \
+	--disk-size "10" \
+	--release-channel "rapid" \
 	--enable-autorepair \
 	--preemptible \
 	--scopes=service-control,service-management,compute-rw,storage-ro,cloud-platform,logging-write,monitoring-write,pubsub,datastore \

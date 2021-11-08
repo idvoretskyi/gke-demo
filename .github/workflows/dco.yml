@@ -1,0 +1,6 @@
+name: DCO
+on:
+  pull_request:
+jobs:
+  check:
+    uses: idvoretskyi/dco-checker/.github/workflows/dco.yml@v0.1.0-alpha

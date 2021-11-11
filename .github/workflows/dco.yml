@@ -3,4 +3,4 @@ on:
   pull_request:
 jobs:
   check:
-    uses: idvoretskyi/dcochecker@main
+    uses: idvoretskyi/.github/workflows/dcochecker@v1

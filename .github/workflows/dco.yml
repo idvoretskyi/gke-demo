@@ -3,4 +3,4 @@ on:
   pull_request:
 jobs:
   check:
-    uses: idvoretskyi/dcochecker/.github/workflows/dco.yml@v1
+    uses: actions/idvoretskyi/dcochecker@v1

@@ -1,6 +1,2 @@
-name: DCO
-on:
-  pull_request:
-jobs:
-  check:
-    uses: idvoretskyi/dcochecker@v1 
+- name: DCO Checker
+  uses: idvoretskyi/dcochecker@v1
